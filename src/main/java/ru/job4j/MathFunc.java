@@ -14,7 +14,7 @@ public class MathFunc {
 
     public static void main(String[] args) {
         int result1 = MathFunc.func1(3);
-        float result2 = MathFunc.func2(5);
+        float result2 = MathFunc.func2(5F);
         float total = result1 + result2;
         int result3 = MathFunc.func1(100);
         System.out.println(total);
