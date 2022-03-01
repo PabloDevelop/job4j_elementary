@@ -3,11 +3,8 @@ package ru.job4j;
 public class TrgArea {
     public static double area(double a, double b, double c) {
         double p = a + b + c / 2;
-        double rsl1 = p - a;
-        double rsl2 = p - b;
-        double rsl3 = p - c;
-        double rsl4 = Math.sqrt(p * rsl1 * rsl2 * rsl3);
-        return rsl4;
+        double rsl1 = Math.sqrt((p * (p - a) * (p - b) * (p - c)));
+        return rsl1;
     }
 
     public static void main(String[] args) {
