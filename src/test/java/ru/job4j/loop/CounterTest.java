@@ -68,4 +68,31 @@ public class CounterTest {
         int expected = 25;
         assertEquals(expected, result);
     }
+
+    @Test
+    public void sumByEvenFrom0To10Then30() {
+        int start = 0;
+        int finish = 10;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void sumByEvenFrom3To8Then18() {
+        int start = 3;
+        int finish = 8;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 18;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void sumByEvenFrom1To1Then0() {
+        int start = 1;
+        int finish = 1;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 0;
+        assertEquals(expected, result);
+    }
 }
