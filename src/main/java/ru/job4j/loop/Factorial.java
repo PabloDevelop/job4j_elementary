@@ -3,9 +3,9 @@ package ru.job4j.loop;
 public class Factorial {
     public static int calc(int n) {
         int multi = 1;
-        int result;
-        for (result = 1; result <= n; result++) {
-                multi = result * multi;
+        int i;
+        for (i = 2; i <= n; i++) {
+                multi = multi * i;
             }
         return multi;
     }
