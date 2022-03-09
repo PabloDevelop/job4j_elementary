@@ -4,6 +4,6 @@ public class ArrayDefinition {
     public static void main(String[] args) {
         short[] ages = new short[10];
         String[] surnames = new String[1000];
-        float[] prices = new float[0];
+        float[] prices = new float[40];
     }
 }
